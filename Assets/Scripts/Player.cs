@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
             // makes the players vertical velocity = jumpforce
             body.velocity = new Vector2(body.velocity.x, jumpForce);
         }
-
+        
         UpdateAnim();
     }
 
