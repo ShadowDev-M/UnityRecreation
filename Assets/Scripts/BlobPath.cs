@@ -8,14 +8,16 @@ using Pathfinding; // Required for A* Pathfinding
 public class BlobPath : MonoBehaviour
 {
     public Transform target; // The target the AI should move towards
-    public float speed = 3f; // Movement speed
+    public float maxSpeed = 3f; // Movement speed cap
     public float jumpForce = 5f; // Force applied when jumping
     public float nextWaypointDistance = 1f; // Distance to consider waypoint reached
     public float gapDetectionDistance = 1.5f; // Distance to detect gaps
     public LayerMask groundLayer; // Layer for ground detection
     public float stuckDetectionTime = 2f; // Time to detect if the AI is stuck
     public float stuckThreshold = 0.1f; // Threshold to detect if the AI isn't moving
+    public float speedBoost = 0.0f;
 
+    public float speed = 3f; // Movement speed
     private Path path;
     private int currentWaypoint = 0;
     private bool isGrounded = false;
@@ -55,23 +57,24 @@ public class BlobPath : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (speedBoost > 0) { speedBoost -= Time.fixedDeltaTime*2; } else { speedBoost = 0; }
+
+        speed = maxSpeed + speedBoost;
+      
         if (path == null || target == null) return;
 
-        // Check if the AI is stuck
-        //if (!isGrounded)
-        //DetectStuck();
 
-        if (rb.velocity.magnitude != 0) { DetectStuck(); }
+        if (Vector2.Distance(rb.position, target.position) > 5) { DetectStuck(); }
 
-        // If flying, move directly to the target
+        
         if (isFlying)
         {
-            FlyToTarget();
+            BalloonMode();
             return;
         }
 
-        // Check if the AI is grounded
-        isGrounded = Physics2D.OverlapCircle(transform.position, 0.1f, groundLayer);
+        // checking if touching ground
+        isGrounded = Physics2D.OverlapCircle(transform.position, 0.3f, groundLayer);
 
         // If close to the current waypoint, move to the next one
         if (currentWaypoint >= path.vectorPath.Count) return;
@@ -82,26 +85,28 @@ public class BlobPath : MonoBehaviour
             return;
         }
 
-        // Calculate direction to the next waypoint
+        // direction to target
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
 
-        // Check for gaps
-        if (isGrounded && DetectGap())
+        // checking for gap and if blob wants to move before jumping 
+        if (DetectGap() && isGrounded && rb.velocity.x != 0)
         {
             Jump();
+
         }
         else
         {
             // Horizontal movement
-            Vector2 force = new Vector2(direction.x * speed, rb.velocity.y);
+            Vector2 force = new Vector2(direction.x * (speed + speedBoost), rb.velocity.y);
             rb.velocity = force;
 
-            // Flip sprite based on movement direction (optional)
+            // Flip sprite based on movement direction
             if (force.x > 0.01f)
                 transform.localScale = new Vector3(1, 1, 1);
             else if (force.x < -0.01f)
                 transform.localScale = new Vector3(-1, 1, 1);
         }
+        
     }
 
     bool DetectGap()
@@ -120,11 +125,14 @@ public class BlobPath : MonoBehaviour
         if (isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            speedBoost = 2.0f;
         }
     }
 
     void DetectStuck()
     {
+        if (!isFlying) { rb.velocity = Vector2.zero; }
+
         float distanceMoved = Vector2.Distance(rb.position, lastPosition);
         lastPosition = rb.position;
 
@@ -143,18 +151,21 @@ public class BlobPath : MonoBehaviour
         }
     }
 
-    void FlyToTarget()
+    void BalloonMode()
     {
         Vector2 direction = ((Vector2)target.position - rb.position).normalized;
         rb.velocity = direction * speed*2;
         blobCollider.enabled = false;
 
-        // Stop flying when close to the target
-        if (Vector2.Distance(rb.position, target.position) < nextWaypointDistance)
+        // will stop flying when near target
+        if (Vector2.Distance(rb.position, target.position) < 0.2)
         {
             blobCollider.enabled = true;
             rb.velocity = Vector2.zero;
             isFlying = false;
+            
+                Jump();
+            
             stuckTimer = 0f;
         }
     }
@@ -163,7 +174,7 @@ public class BlobPath : MonoBehaviour
     {
         if (path == null) return;
 
-        // Draw path waypoints
+        // for seeing path in the editor
         for (int i = currentWaypoint; i < path.vectorPath.Count; i++)
         {
             Gizmos.color = Color.blue;

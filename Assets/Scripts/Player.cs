@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
+        if (Mathf.Abs(body.velocity.y) > 0.2) return false;
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, 0.1f, ground);
     }
     private void UpdateAnim()
