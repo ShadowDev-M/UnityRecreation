@@ -135,7 +135,7 @@ public class BlobPath : MonoBehaviour
     void Hop() {
         if (isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, Random.Range(1.5f, 2.5f));
+            rb.velocity = new Vector2(rb.velocity.x, Random.Range(1.3f, 2.1f));
         }
     }
 
