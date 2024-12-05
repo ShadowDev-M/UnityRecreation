@@ -96,15 +96,27 @@ public class BlobPath : MonoBehaviour
         }
         else
         {
-            // Horizontal movement
-            Vector2 force = new Vector2(direction.x * (speed + speedBoost), rb.velocity.y);
-            rb.velocity = force;
 
-            // Flip sprite based on movement direction
-            if (force.x > 0.01f)
-                transform.localScale = new Vector3(1, 1, 1);
-            else if (force.x < -0.01f)
-                transform.localScale = new Vector3(-1, 1, 1);
+            if (isGrounded)
+            {
+                // Horizontal movement
+                Vector2 force = new Vector2(direction.x * (speed + speedBoost), rb.velocity.y);
+                rb.velocity = force;
+
+                // Flip sprite based on movement direction
+
+                if (force.x > 0.01f)
+                    transform.localScale = new Vector3(1, 1, 1);
+                else if (force.x < -0.01f)
+                    transform.localScale = new Vector3(-1, 1, 1);
+                
+                
+                if(rb.velocity.x != 0)
+                {
+                    Hop();
+
+                }
+            }
         }
         
     }
@@ -118,6 +130,13 @@ public class BlobPath : MonoBehaviour
         Debug.DrawRay(rayOrigin, Vector2.down * 2f, Color.red); // Debug line for the raycast
 
         return hit.collider == null; // True if no ground is detected
+    }
+
+    void Hop() {
+        if (isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, Random.Range(1.5f, 2.5f));
+        }
     }
 
     void Jump()
