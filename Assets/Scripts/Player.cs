@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -76,6 +77,16 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isMoving", false);
         }
 
+    }
+
+    private void FixedUpdate()
+    {
+        if (anim)
+        {
+            anim.SetFloat("Speed", Mathf.Abs(body.velocity.x));
+            
+            anim.SetBool("isGrounded", IsGrounded());
+        }
     }
 }
 

@@ -35,6 +35,9 @@ TextureImporter:
   - first:
       213: -4256586781367078120
     second: PlayerJump_10
+  - first:
+      213: 89184870379428924
+    second: PlayerJump_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -159,12 +162,12 @@ TextureImporter:
       name: PlayerJump_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 49
-        height: 109
+        x: 4
+        y: 2
+        width: 48
+        height: 106
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,12 +183,12 @@ TextureImporter:
       name: PlayerJump_1
       rect:
         serializedVersion: 2
-        x: 61
-        y: 0
+        x: 64
+        y: 2
         width: 46
-        height: 109
+        height: 104
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,12 +204,12 @@ TextureImporter:
       name: PlayerJump_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 0
-        width: 49
-        height: 109
+        x: 118
+        y: 2
+        width: 51
+        height: 108
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,12 +225,12 @@ TextureImporter:
       name: PlayerJump_3
       rect:
         serializedVersion: 2
-        x: 171
-        y: 0
-        width: 49
-        height: 109
+        x: 174
+        y: 10
+        width: 50
+        height: 104
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,12 +246,12 @@ TextureImporter:
       name: PlayerJump_4
       rect:
         serializedVersion: 2
-        x: 228
-        y: 0
-        width: 47
-        height: 109
+        x: 231
+        y: 7
+        width: 48
+        height: 108
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,12 +267,12 @@ TextureImporter:
       name: PlayerJump_5
       rect:
         serializedVersion: 2
-        x: 286
-        y: 0
-        width: 45
-        height: 109
+        x: 289
+        y: 2
+        width: 44
+        height: 110
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,12 +288,12 @@ TextureImporter:
       name: PlayerJump_6
       rect:
         serializedVersion: 2
-        x: 338
-        y: 0
-        width: 48
-        height: 109
+        x: 341
+        y: 2
+        width: 47
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -306,12 +309,12 @@ TextureImporter:
       name: PlayerJump_7
       rect:
         serializedVersion: 2
-        x: 396
-        y: 0
+        x: 399
+        y: 2
         width: 47
-        height: 109
+        height: 103
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -327,12 +330,12 @@ TextureImporter:
       name: PlayerJump_8
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 49
-        height: 109
+        x: 455
+        y: 3
+        width: 50
+        height: 108
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -345,15 +348,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerJump_10
+      name: PlayerJump_9
       rect:
         serializedVersion: 2
-        x: 560
-        y: 5
-        width: 51
+        x: 505
+        y: 10
+        width: 56
         height: 104
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,15 +369,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerJump_11
+      name: PlayerJump_10
       rect:
         serializedVersion: 2
-        x: 616
-        y: 0
-        width: 50
-        height: 109
+        x: 562
+        y: 9
+        width: 53
+        height: 106
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -387,22 +390,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerJump_9
+      name: PlayerJump_11
       rect:
         serializedVersion: 2
-        x: 504
+        x: 618
         y: 2
-        width: 52
-        height: 107
+        width: 51
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bbc7809f0a50f364ba462c93bbf15afb
-      internalID: -911758301
+      spriteID: c3c1e46ca29dc3100800000000000000
+      internalID: 89184870379428924
       vertices: []
       indices: 
       edges: []
@@ -410,7 +413,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b7b7b00a6c0fb8546840ba48b272adfb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -418,9 +421,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PlayerJump_10: -983954678055824977
-      PlayerJump_11: -4256586781367078120
-      PlayerJump_9: -911758301
+      PlayerJump_0: 444702640956841479
+      PlayerJump_1: -7941400250425145444
+      PlayerJump_10: -4256586781367078120
+      PlayerJump_11: 89184870379428924
+      PlayerJump_2: 496497603323687001
+      PlayerJump_3: 8691810124558177054
+      PlayerJump_4: -2098300212452292270
+      PlayerJump_5: -2178818368794951686
+      PlayerJump_6: 8744439205818513450
+      PlayerJump_7: -1831677882150188195
+      PlayerJump_8: -1195176971817732050
+      PlayerJump_9: -983954678055824977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -16,7 +16,7 @@ public class BlobPath : MonoBehaviour
     public float stuckDetectionTime = 2f; // Time to detect if the AI is stuck
     public float stuckThreshold = 0.1f; // Threshold to detect if the AI isn't moving
     public float speedBoost = 0.0f;
-
+    
     public float speed = 3f; // Movement speed
     private Path path;
     private int currentWaypoint = 0;
@@ -66,13 +66,16 @@ public class BlobPath : MonoBehaviour
 
         if (Vector2.Distance(rb.position, target.position) > 5) { DetectStuck(); }
 
+
+        
         
         if (isFlying)
         {
             BalloonMode();
             return;
+            
         }
-
+        
         // checking if touching ground
         isGrounded = Physics2D.OverlapCircle(transform.position, 0.3f, groundLayer);
 

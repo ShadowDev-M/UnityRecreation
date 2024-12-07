@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: 02a6b5f615734d64da910e38883574b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8571688117001484512
+    second: BlobTurnIntoDoor_0
+  - first:
+      213: 3805890353948322023
+    second: BlobTurnIntoDoor_1
+  - first:
+      213: 9018385701580461663
+    second: BlobTurnIntoDoor_2
+  - first:
+      213: -1203210838212368741
+    second: BlobTurnIntoDoor_3
+  - first:
+      213: 8000469565035042403
+    second: BlobTurnIntoDoor_4
+  - first:
+      213: 2240745725894907524
+    second: BlobTurnIntoDoor_5
+  - first:
+      213: -8481201400054435695
+    second: BlobTurnIntoDoor_6
+  - first:
+      213: 4116648886895219947
+    second: BlobTurnIntoDoor_7
+  - first:
+      213: -6110628093729930950
+    second: BlobTurnIntoDoor_8
+  - first:
+      213: 6308528200083741011
+    second: BlobTurnIntoDoor_9
+  - first:
+      213: 180808465412469898
+    second: BlobTurnIntoDoor_10
+  - first:
+      213: 3596704615230234021
+    second: BlobTurnIntoDoor_11
+  - first:
+      213: 4295620903168663716
+    second: BlobTurnIntoDoor_12
+  - first:
+      213: -2677752593440004466
+    second: BlobTurnIntoDoor_13
+  - first:
+      213: -6229749755920978323
+    second: BlobTurnIntoDoor_14
+  - first:
+      213: 4498554448919479394
+    second: BlobTurnIntoDoor_15
+  - first:
+      213: -3402493769418733881
+    second: BlobTurnIntoDoor_16
+  - first:
+      213: 229393295357865813
+    second: BlobTurnIntoDoor_17
+  - first:
+      213: 7863867114456037116
+    second: BlobTurnIntoDoor_18
+  - first:
+      213: -2939437709767798688
+    second: BlobTurnIntoDoor_19
+  - first:
+      213: -7743874240137232326
+    second: BlobTurnIntoDoor_20
+  - first:
+      213: -8168439906359367947
+    second: BlobTurnIntoDoor_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e87f4b7de0c4f670800000000000000
+      internalID: 8571688117001484512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8ec29cc1d31d430800000000000000
+      internalID: 3805890353948322023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1
+        width: 71
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f565a2e930eb72d70800000000000000
+      internalID: 9018385701580461663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1
+        width: 70
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96a3761e165d4fe0800000000000000
+      internalID: -1203210838212368741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_4
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1
+        width: 71
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366dc3c5ea0670f60800000000000000
+      internalID: 8000469565035042403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1
+        width: 73
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486d0ff9d5ab81f10800000000000000
+      internalID: 2240745725894907524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_6
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1
+        width: 75
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 190b5311348bc4a80800000000000000
+      internalID: -8481201400054435695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_7
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be495680a56412930800000000000000
+      internalID: 4116648886895219947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_8
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3184becf10b23ba0800000000000000
+      internalID: -6110628093729930950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_9
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359968559f46c8750800000000000000
+      internalID: 6308528200083741011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_10
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a843b41675c528200800000000000000
+      internalID: 180808465412469898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_11
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad5ec89acf0ae130800000000000000
+      internalID: 3596704615230234021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_12
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a06c17c37c1d9b30800000000000000
+      internalID: 4295620903168663716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_13
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86a0af1436b6dad0800000000000000
+      internalID: -2677752593440004466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_14
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ee0c68a9b7b89a0800000000000000
+      internalID: -6229749755920978323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_15
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264499adf631e6e30800000000000000
+      internalID: 4498554448919479394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_16
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c60153a1f9e7c0d0800000000000000
+      internalID: -3402493769418733881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_17
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f69ab9cf7fe2300800000000000000
+      internalID: 229393295357865813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_18
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6370ed971122d60800000000000000
+      internalID: 7863867114456037116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_19
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06017ed0af40537d0800000000000000
+      internalID: -2939437709767798688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_20
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a30825b486b388490800000000000000
+      internalID: -7743874240137232326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlobTurnIntoDoor_21
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1
+        width: 76
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f62354fe2fd3ae80800000000000000
+      internalID: -8168439906359367947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

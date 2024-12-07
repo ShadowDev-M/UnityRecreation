@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: 131096075810827486
     second: BlobIdle_5
+  - first:
+      213: 4702140393483496672
+    second: BlobIdle_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,12 +147,12 @@ TextureImporter:
       name: BlobIdle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 37
-        height: 46
+        x: 2
+        y: 1
+        width: 40
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +168,12 @@ TextureImporter:
       name: BlobIdle_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 0
-        width: 37
-        height: 46
+        x: 43
+        y: 1
+        width: 39
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,12 +189,12 @@ TextureImporter:
       name: BlobIdle_2
       rect:
         serializedVersion: 2
-        x: 82
-        y: 0
-        width: 37
-        height: 46
+        x: 84
+        y: 2
+        width: 39
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,12 +210,12 @@ TextureImporter:
       name: BlobIdle_3
       rect:
         serializedVersion: 2
-        x: 123
-        y: 0
-        width: 37
-        height: 46
+        x: 125
+        y: 2
+        width: 39
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +231,12 @@ TextureImporter:
       name: BlobIdle_4
       rect:
         serializedVersion: 2
-        x: 164
-        y: 0
-        width: 37
-        height: 46
+        x: 166
+        y: 2
+        width: 39
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +252,12 @@ TextureImporter:
       name: BlobIdle_5
       rect:
         serializedVersion: 2
-        x: 205
-        y: 0
-        width: 37
-        height: 46
+        x: 207
+        y: 1
+        width: 40
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,19 +273,19 @@ TextureImporter:
       name: BlobIdle_6
       rect:
         serializedVersion: 2
-        x: 246
-        y: 0
-        width: 37
-        height: 46
+        x: 247
+        y: 2
+        width: 41
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8394898704eda844594ca4e89c6f8604
-      internalID: -651187456
+      spriteID: 0ec699d56cb514140800000000000000
+      internalID: 4702140393483496672
       vertices: []
       indices: 
       edges: []
@@ -290,15 +293,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0837e06d4363b6f4095cf083648c2f43
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      BlobIdle_6: -651187456
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
