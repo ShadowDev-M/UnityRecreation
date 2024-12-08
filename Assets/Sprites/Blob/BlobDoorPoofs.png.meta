@@ -564,7 +564,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlobDoorPoofs_0: -6304336649983594283
+      BlobDoorPoofs_1: -8196182625561267618
+      BlobDoorPoofs_10: -2970903705870901059
+      BlobDoorPoofs_11: 5697607594640125582
+      BlobDoorPoofs_12: -214686731531863923
+      BlobDoorPoofs_13: -5972301403823999027
+      BlobDoorPoofs_14: -4327001402566858921
+      BlobDoorPoofs_15: -3436544319603673770
+      BlobDoorPoofs_16: -2090949480517804101
+      BlobDoorPoofs_17: -8214108013294843349
+      BlobDoorPoofs_2: -2858638731400467312
+      BlobDoorPoofs_3: 7096031610972842275
+      BlobDoorPoofs_4: -2837421123593224124
+      BlobDoorPoofs_5: -1586412144013489347
+      BlobDoorPoofs_6: -6119400504437240715
+      BlobDoorPoofs_7: 3053970253786059192
+      BlobDoorPoofs_8: -7931970596983101208
+      BlobDoorPoofs_9: -7789781156684869694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

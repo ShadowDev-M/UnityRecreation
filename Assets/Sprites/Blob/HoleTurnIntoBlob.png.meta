@@ -228,7 +228,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HoleTurnIntoBlob_0: -631351494505792530
+      HoleTurnIntoBlob_1: -7718262415440145872
+      HoleTurnIntoBlob_2: -898821700317970098
+      HoleTurnIntoBlob_3: -7138355200368628729
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

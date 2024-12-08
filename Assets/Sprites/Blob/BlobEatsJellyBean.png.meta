@@ -276,7 +276,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlobEatsJellyBean_0: 1191682718361383765
+      BlobEatsJellyBean_1: -8040111703290264487
+      BlobEatsJellyBean_2: 8028361154945464676
+      BlobEatsJellyBean_3: 9182102272213198077
+      BlobEatsJellyBean_4: 3164151800144827944
+      BlobEatsJellyBean_5: -8287677060308350133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

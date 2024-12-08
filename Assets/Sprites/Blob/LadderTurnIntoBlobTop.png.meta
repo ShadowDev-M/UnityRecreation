@@ -516,7 +516,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LadderTurnIntoBlobTop_0: -3134970801113590655
+      LadderTurnIntoBlobTop_1: 570208983159597695
+      LadderTurnIntoBlobTop_10: 458792583367590048
+      LadderTurnIntoBlobTop_11: -824104160204031571
+      LadderTurnIntoBlobTop_12: -1945431668679504661
+      LadderTurnIntoBlobTop_13: 9187672807465585530
+      LadderTurnIntoBlobTop_14: 4379418522497311133
+      LadderTurnIntoBlobTop_15: 500103097014574690
+      LadderTurnIntoBlobTop_2: 2759663525866455436
+      LadderTurnIntoBlobTop_3: 6995677318292849985
+      LadderTurnIntoBlobTop_4: 1423769820717555192
+      LadderTurnIntoBlobTop_5: -4602171219909680572
+      LadderTurnIntoBlobTop_6: 7941713543202674922
+      LadderTurnIntoBlobTop_7: 563825907665806947
+      LadderTurnIntoBlobTop_8: 1430018179614842325
+      LadderTurnIntoBlobTop_9: -2794210069472413320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -660,7 +660,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlobTurnIntoDoor_0: 8571688117001484512
+      BlobTurnIntoDoor_1: 3805890353948322023
+      BlobTurnIntoDoor_10: 180808465412469898
+      BlobTurnIntoDoor_11: 3596704615230234021
+      BlobTurnIntoDoor_12: 4295620903168663716
+      BlobTurnIntoDoor_13: -2677752593440004466
+      BlobTurnIntoDoor_14: -6229749755920978323
+      BlobTurnIntoDoor_15: 4498554448919479394
+      BlobTurnIntoDoor_16: -3402493769418733881
+      BlobTurnIntoDoor_17: 229393295357865813
+      BlobTurnIntoDoor_18: 7863867114456037116
+      BlobTurnIntoDoor_19: -2939437709767798688
+      BlobTurnIntoDoor_2: 9018385701580461663
+      BlobTurnIntoDoor_20: -7743874240137232326
+      BlobTurnIntoDoor_21: -8168439906359367947
+      BlobTurnIntoDoor_3: -1203210838212368741
+      BlobTurnIntoDoor_4: 8000469565035042403
+      BlobTurnIntoDoor_5: 2240745725894907524
+      BlobTurnIntoDoor_6: -8481201400054435695
+      BlobTurnIntoDoor_7: 4116648886895219947
+      BlobTurnIntoDoor_8: -6110628093729930950
+      BlobTurnIntoDoor_9: 6308528200083741011
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

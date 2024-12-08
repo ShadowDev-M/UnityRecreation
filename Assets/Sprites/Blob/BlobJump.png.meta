@@ -300,7 +300,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlobJump_0: 3640906077356352866
+      BlobJump_1: 130940557686240836
+      BlobJump_2: -1135196999843242434
+      BlobJump_3: -1795081839206660548
+      BlobJump_4: 2872635757472112562
+      BlobJump_5: -8463768579233225729
+      BlobJump_6: -5282216243142418805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
