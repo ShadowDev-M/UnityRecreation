@@ -16,6 +16,7 @@ public class BlobPath : MonoBehaviour
     public float stuckDetectionTime = 2f; // Time to detect if the AI is stuck
     public float stuckThreshold = 0.1f; // Threshold to detect if the AI isn't moving
     public float speedBoost = 0.0f;
+    public GameObject Player;
     
     public float speed = 3f; // Movement speed
     private Path path;
@@ -64,11 +65,13 @@ public class BlobPath : MonoBehaviour
         if (path == null || target == null) return;
 
 
-        if (Vector2.Distance(rb.position, target.position) > 5) { DetectStuck(); }
+        if (Vector2.Distance(rb.position, target.position) > 5 && target == Player.transform) { DetectStuck(); }
 
 
-        
-        
+        if (Input.GetKeyDown(KeyCode.E))
+            target = Player.transform;
+
+
         if (isFlying)
         {
             BalloonMode();
