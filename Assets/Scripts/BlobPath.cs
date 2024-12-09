@@ -58,6 +58,7 @@ public class BlobPath : MonoBehaviour
 
     void FixedUpdate()
     {
+    
         if (speedBoost > 0) { speedBoost -= Time.fixedDeltaTime*2; } else { speedBoost = 0; }
 
         speed = maxSpeed + speedBoost;
@@ -65,7 +66,10 @@ public class BlobPath : MonoBehaviour
         if (path == null || target == null) return;
 
 
-        if (Vector2.Distance(rb.position, target.position) > 5 && target == Player.transform) { DetectStuck(); }
+        if (path != null && PathObstruction() && target == Player.transform)
+        { DetectStuck(); 
+        }
+        
 
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -214,5 +218,39 @@ public class BlobPath : MonoBehaviour
                 Gizmos.DrawLine(path.vectorPath[i - 1], path.vectorPath[i]);
             }
         }
+    }
+
+    bool PathObstruction()
+    {
+        if (path == null || path.vectorPath == null || path.vectorPath.Count < 2) return true;
+
+        for (int i = currentWaypoint; i < path.vectorPath.Count - 1; i++)
+        {
+            Vector2 start = path.vectorPath[i];
+            Vector2 end = path.vectorPath[i + 1];
+
+            
+
+           /* float heightDifference = end.y - start.y;
+            if (heightDifference > jumpForce)  
+            {
+                print("To High");
+
+                return true; 
+            }*/
+
+            // Collision in the Path
+            RaycastHit2D hit = Physics2D.Linecast(start, end, groundLayer);
+            if (hit.collider != null)
+            {
+                Debug.DrawLine(start, end, Color.red); // debug line for editor
+                print("Obstructed Wall");
+                return true;
+            }
+        }
+
+
+        //path clear
+        return false; 
     }
 }

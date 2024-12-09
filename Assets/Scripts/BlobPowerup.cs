@@ -74,7 +74,7 @@ public class BlobPowerup : MonoBehaviour
                 UnsummonHole();
                 SummonHole(tempTarget.transform.position + Vector3.down);
             }
-            if (blobPathScript.target == blobPathScript.Player.transform) { UnsummonHole(); tempTarget = null; print("trigger"); }
+            if (blobPathScript.target == blobPathScript.Player.transform) { UnsummonHole(); tempTarget = null; }
 
         }
     }
@@ -87,6 +87,8 @@ public class BlobPowerup : MonoBehaviour
 
         tempTarget = target;
     }
+
+
 
     void SummonHole(Vector3 worldPos)
     {
