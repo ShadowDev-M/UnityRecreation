@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Boy
+  - Ladder
   layers:
   - Default
   - TransparentFX
