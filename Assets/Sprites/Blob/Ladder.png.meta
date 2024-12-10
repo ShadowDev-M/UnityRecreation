@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 7b5b8b8a4d522be4aadb7157cc75ee80
+guid: ad0d07d5915bf5c40b0b2d338050357d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 489951542882950131
-    second: BlobTopTurnIntoLadder_0
+      213: 1833247098351559992
+    second: Ladder_0
   - first:
-      213: -4384373823206023857
-    second: BlobTopTurnIntoLadder_1
+      213: -7515280532982068617
+    second: Ladder_1
   - first:
-      213: 5672098597424883055
-    second: BlobTopTurnIntoLadder_2
+      213: -2388662932940850130
+    second: Ladder_2
   - first:
-      213: 1929654917202713286
-    second: BlobTopTurnIntoLadder_3
+      213: 6669089977202008665
+    second: Ladder_3
   - first:
-      213: -101283040104337891
-    second: BlobTopTurnIntoLadder_4
+      213: -6937686969608777256
+    second: Ladder_4
   - first:
-      213: -4019900889513892798
-    second: BlobTopTurnIntoLadder_5
+      213: -4139979231900194161
+    second: Ladder_5
   - first:
-      213: 8170410344635940608
-    second: BlobTopTurnIntoLadder_6
+      213: -4284215559397572547
+    second: Ladder_6
   - first:
-      213: 4085029112399929550
-    second: BlobTopTurnIntoLadder_7
+      213: -6363479800852930813
+    second: Ladder_7
   - first:
-      213: 2670765526263404434
-    second: BlobTopTurnIntoLadder_8
+      213: -2945765568948316689
+    second: Ladder_8
   - first:
-      213: -4530517369267900132
-    second: BlobTopTurnIntoLadder_9
+      213: 9034876127699215426
+    second: Ladder_9
   - first:
-      213: 8205056051570345083
-    second: BlobTopTurnIntoLadder_10
+      213: -4435368126444023662
+    second: Ladder_10
   - first:
-      213: -1269560368788024563
-    second: BlobTopTurnIntoLadder_11
+      213: 4899671127616278681
+    second: Ladder_11
   - first:
-      213: -5410943991232556847
-    second: BlobTopTurnIntoLadder_12
+      213: 1567133246775099042
+    second: Ladder_12
   - first:
-      213: 1712858889729606004
-    second: BlobTopTurnIntoLadder_13
+      213: -3183241505100787241
+    second: Ladder_13
   - first:
-      213: -2162710780261317719
-    second: BlobTopTurnIntoLadder_14
+      213: 8135817196024126475
+    second: Ladder_14
   - first:
-      213: -2273460679369518146
-    second: BlobTopTurnIntoLadder_15
+      213: -8858890313574345314
+    second: Ladder_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -82,16 +82,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 2
-    wrapV: 2
-    wrapW: 2
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -171,7 +171,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_0
+      name: Ladder_0
       rect:
         serializedVersion: 2
         x: 9
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fb51b61558acc600800000000000000
-      internalID: 489951542882950131
+      spriteID: 835a2c2e580017910800000000000000
+      internalID: 1833247098351559992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_1
+      name: Ladder_1
       rect:
         serializedVersion: 2
         x: 56
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4d9849bc339723c0800000000000000
-      internalID: -4384373823206023857
+      spriteID: 77a02344c2c54b790800000000000000
+      internalID: -7515280532982068617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_2
+      name: Ladder_2
       rect:
         serializedVersion: 2
         x: 63
@@ -227,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f65608e4f9757be40800000000000000
-      internalID: 5672098597424883055
+      spriteID: e2cfae9d7b3c9ded0800000000000000
+      internalID: -2388662932940850130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_3
+      name: Ladder_3
       rect:
         serializedVersion: 2
         x: 107
@@ -248,14 +248,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ca14f66ce287ca10800000000000000
-      internalID: 1929654917202713286
+      spriteID: 9526e3afffd5d8c50800000000000000
+      internalID: 6669089977202008665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_4
+      name: Ladder_4
       rect:
         serializedVersion: 2
         x: 155
@@ -269,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1e2fc49c9b289ef0800000000000000
-      internalID: -101283040104337891
+      spriteID: 8d1dc95657268bf90800000000000000
+      internalID: -6937686969608777256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_5
+      name: Ladder_5
       rect:
         serializedVersion: 2
         x: 259
@@ -290,14 +290,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2446f3870717638c0800000000000000
-      internalID: -4019900889513892798
+      spriteID: f8a2819b2d6db86c0800000000000000
+      internalID: -4139979231900194161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_6
+      name: Ladder_6
       rect:
         serializedVersion: 2
         x: 315
@@ -311,14 +311,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00fb3357be0236170800000000000000
-      internalID: 8170410344635940608
+      spriteID: d3008e0c5a86b84c0800000000000000
+      internalID: -4284215559397572547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_7
+      name: Ladder_7
       rect:
         serializedVersion: 2
         x: 367
@@ -332,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec02ab59550f0b830800000000000000
-      internalID: 4085029112399929550
+      spriteID: 30f99c616d060b7a0800000000000000
+      internalID: -6363479800852930813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_8
+      name: Ladder_8
       rect:
         serializedVersion: 2
         x: 418
@@ -353,14 +353,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2971a478817701520800000000000000
-      internalID: 2670765526263404434
+      spriteID: fe5524782d98e17d0800000000000000
+      internalID: -2945765568948316689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_9
+      name: Ladder_9
       rect:
         serializedVersion: 2
         x: 469
@@ -374,14 +374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c11bc04d47e5021c0800000000000000
-      internalID: -4530517369267900132
+      spriteID: 2442b2528f3526d70800000000000000
+      internalID: 9034876127699215426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_10
+      name: Ladder_10
       rect:
         serializedVersion: 2
         x: 520
@@ -395,14 +395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b740504b1073ed170800000000000000
-      internalID: 8205056051570345083
+      spriteID: 290d63740386272c0800000000000000
+      internalID: -4435368126444023662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_11
+      name: Ladder_11
       rect:
         serializedVersion: 2
         x: 571
@@ -416,14 +416,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d03d97d229d916ee0800000000000000
-      internalID: -1269560368788024563
+      spriteID: 9905ec55ee02ff340800000000000000
+      internalID: 4899671127616278681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_12
+      name: Ladder_12
       rect:
         serializedVersion: 2
         x: 622
@@ -437,14 +437,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d09c0fbb1778e4b0800000000000000
-      internalID: -5410943991232556847
+      spriteID: 2aefbb982639fb510800000000000000
+      internalID: 1567133246775099042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_13
+      name: Ladder_13
       rect:
         serializedVersion: 2
         x: 673
@@ -458,14 +458,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47104b8c51c45c710800000000000000
-      internalID: 1712858889729606004
+      spriteID: 7d1103677bad2d3d0800000000000000
+      internalID: -3183241505100787241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_14
+      name: Ladder_14
       rect:
         serializedVersion: 2
         x: 724
@@ -479,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a3cd9ef0028cf1e0800000000000000
-      internalID: -2162710780261317719
+      spriteID: b0c588662aa38e070800000000000000
+      internalID: 8135817196024126475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BlobTopTurnIntoLadder_15
+      name: Ladder_15
       rect:
         serializedVersion: 2
         x: 775
@@ -500,8 +500,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb39c53be8b0370e0800000000000000
-      internalID: -2273460679369518146
+      spriteID: e95904b3236ee0580800000000000000
+      internalID: -8858890313574345314
       vertices: []
       indices: 
       edges: []
@@ -509,7 +509,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -517,22 +517,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BlobTopTurnIntoLadder_0: 489951542882950131
-      BlobTopTurnIntoLadder_1: -4384373823206023857
-      BlobTopTurnIntoLadder_10: 8205056051570345083
-      BlobTopTurnIntoLadder_11: -1269560368788024563
-      BlobTopTurnIntoLadder_12: -5410943991232556847
-      BlobTopTurnIntoLadder_13: 1712858889729606004
-      BlobTopTurnIntoLadder_14: -2162710780261317719
-      BlobTopTurnIntoLadder_15: -2273460679369518146
-      BlobTopTurnIntoLadder_2: 5672098597424883055
-      BlobTopTurnIntoLadder_3: 1929654917202713286
-      BlobTopTurnIntoLadder_4: -101283040104337891
-      BlobTopTurnIntoLadder_5: -4019900889513892798
-      BlobTopTurnIntoLadder_6: 8170410344635940608
-      BlobTopTurnIntoLadder_7: 4085029112399929550
-      BlobTopTurnIntoLadder_8: 2670765526263404434
-      BlobTopTurnIntoLadder_9: -4530517369267900132
+      Ladder_0: 1833247098351559992
+      Ladder_1: -7515280532982068617
+      Ladder_10: -4435368126444023662
+      Ladder_11: 4899671127616278681
+      Ladder_12: 1567133246775099042
+      Ladder_13: -3183241505100787241
+      Ladder_14: 8135817196024126475
+      Ladder_15: -8858890313574345314
+      Ladder_2: -2388662932940850130
+      Ladder_3: 6669089977202008665
+      Ladder_4: -6937686969608777256
+      Ladder_5: -4139979231900194161
+      Ladder_6: -4284215559397572547
+      Ladder_7: -6363479800852930813
+      Ladder_8: -2945765568948316689
+      Ladder_9: 9034876127699215426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

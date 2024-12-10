@@ -37,8 +37,13 @@ public class BlobPowerup : MonoBehaviour
     public GameObject ladderJellybeanTarget;
     public GameObject ladderPrefab;
     private bool blobTransformed;
+
+    private Animator blobAnimator;
+
     void Start()
     {
+        blobAnimator = GetComponent<Animator>();
+
         blobTransformed = false;
         blobPathScript = GetComponent<BlobPath>();
 
@@ -83,7 +88,7 @@ public class BlobPowerup : MonoBehaviour
 
         if (holeJellybeanTarget != null && blobTransformed == false)
         {
-            if (Vector2.Distance(transform.position, holeJellybeanTarget.transform.position) < 1.0f)
+            if (Vector2.Distance(transform.position, holeJellybeanTarget.transform.position) < 0.25f)
             {
                // print("success!");
                
@@ -169,10 +174,13 @@ public class BlobPowerup : MonoBehaviour
 
 
 
-            RefreshTileMapCollider();
+            RefreshTileMapCollider();            
 
             GetComponent<Rigidbody2D>().simulated = false;
-            GetComponent<SpriteRenderer>().enabled = false;
+            //GetComponent<SpriteRenderer>().enabled = false;
+
+            blobAnimator.SetBool("BlobHole", true);
+            transform.position = tileMap.CellToWorld(cellPosition) + new Vector3(0.5f, 0.9f, 0);
 
             blobTransformed = true;
 
@@ -183,7 +191,9 @@ public class BlobPowerup : MonoBehaviour
         blobTransformed = false;
 
         GetComponent<Rigidbody2D>().simulated = true;
-        GetComponent<SpriteRenderer>().enabled = true;
+        //GetComponent<SpriteRenderer>().enabled = true;
+        blobAnimator.SetBool("BlobHole", false);
+
 
         if (currentHole.cellLocation != null && currentHole.savedTile != null)
         {

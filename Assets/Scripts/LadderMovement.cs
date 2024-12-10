@@ -22,18 +22,19 @@ public class LadderMovement : MonoBehaviour
             isClimbing = true;
             collider2D.isTrigger = true;
         }
-/*
-        if (Input.GetKeyDown(KeyCode.Space) && isClimbing) {
+
+        if (Input.GetKeyDown(KeyCode.Space) && isClimbing)
+        {
             if (Input.GetKey(KeyCode.A))
             {
-                transform.position = new Vector3(transform.position.x - 1, transform.position.y, 0.0f);
+                transform.position = new Vector3(transform.position.x - 1, transform.position.y - 0.5f, 0.0f);
             }
             if (Input.GetKey(KeyCode.D))
             {
-                transform.position = new Vector3(transform.position.x + 1, transform.position.y, 0.0f);
+                transform.position = new Vector3(transform.position.x + 1, transform.position.y + 0.5f, 0.0f);
             }
         }
-*/
+
 
     }
 

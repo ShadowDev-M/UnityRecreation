@@ -21,13 +21,17 @@ public class BlobPath : MonoBehaviour
     public float speed = 3f; // Movement speed
     private Path path;
     private int currentWaypoint = 0;
-    private bool isGrounded = false;
+    public bool isGrounded = false;
     private bool isFlying = false;
     private Seeker seeker;
     private Rigidbody2D rb;
     private Vector2 lastPosition;
     private float stuckTimer = 0f;
     private Collider2D blobCollider;
+
+    private float lastTime;
+    private Animator blobAnimtor;
+
 
     void Start()
     {
@@ -37,6 +41,7 @@ public class BlobPath : MonoBehaviour
         InvokeRepeating("UpdatePath", 0f, 0.5f); // Update path periodically
         lastPosition = rb.position;
 
+        blobAnimtor = GetComponent<Animator>();
     }
 
     void UpdatePath()
@@ -58,7 +63,8 @@ public class BlobPath : MonoBehaviour
 
     void FixedUpdate()
     {
-    
+        
+
         if (speedBoost > 0) { speedBoost -= Time.fixedDeltaTime*2; } else { speedBoost = 0; }
 
         speed = maxSpeed + speedBoost;
@@ -73,10 +79,22 @@ public class BlobPath : MonoBehaviour
 
 
         if (Input.GetKeyDown(KeyCode.E))
+        {
             target = Player.transform;
 
 
-        if (isFlying)
+        }
+
+        if (!Input.GetKey(KeyCode.E)) lastTime = Time.time;
+        else if (Time.time - lastTime >= 1)
+        {
+            target = Player.transform;
+
+            DetectStuck();
+        }
+
+
+            if (isFlying)
         {
             BalloonMode();
             return;
@@ -86,17 +104,22 @@ public class BlobPath : MonoBehaviour
         // checking if touching ground
         isGrounded = Physics2D.OverlapCircle(transform.position, 0.3f, groundLayer);
 
+        blobAnimtor.SetBool("blobHop", !isGrounded);
+
         // If close to the current waypoint, move to the next one
         if (currentWaypoint >= path.vectorPath.Count) return;
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-        if (distance < nextWaypointDistance)
+        if (distance < nextWaypointDistance ||  ((target == Player.transform) && distance < nextWaypointDistance * 4))
         {
+            
+            
             currentWaypoint++;
             return;
         }
 
         // direction to target
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+
 
         // checking for gap and if blob wants to move before jumping 
         if (DetectGap() && isGrounded && rb.velocity.x != 0)
@@ -109,6 +132,8 @@ public class BlobPath : MonoBehaviour
 
             if (isGrounded)
             {
+                
+
                 // Horizontal movement
                 Vector2 force = new Vector2(direction.x * (speed + speedBoost), rb.velocity.y);
                 rb.velocity = force;
@@ -119,16 +144,17 @@ public class BlobPath : MonoBehaviour
                     transform.localScale = new Vector3(1, 1, 1);
                 else if (force.x < -0.01f)
                     transform.localScale = new Vector3(-1, 1, 1);
-                
-                
-                if(rb.velocity.x != 0)
+
+
+                if (rb.velocity.x != 0)
                 {
+                    if (distance > 1)
                     Hop();
 
                 }
             }
         }
-        
+       
     }
 
     bool DetectGap()
@@ -143,9 +169,13 @@ public class BlobPath : MonoBehaviour
     }
 
     void Hop() {
-        if (isGrounded)
+        if (isGrounded && !blobAnimtor.GetCurrentAnimatorStateInfo(0).IsName("BlobHop 1") && !blobAnimtor.GetCurrentAnimatorStateInfo(0).IsName("BlobHop"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, Random.Range(1.3f, 2.1f));
+            rb.velocity = new Vector2(rb.velocity.x, Random.Range(3.3f, 4.1f));
+
+
+            
+            blobAnimtor.SetBool("blobHop", !isGrounded);
         }
     }
 
@@ -186,6 +216,8 @@ public class BlobPath : MonoBehaviour
         rb.velocity = direction * speed*2;
         blobCollider.enabled = false;
 
+        blobAnimtor.SetBool("Balloon", true);
+
         // will stop flying when near target
         if (Vector2.Distance(rb.position, target.position) < 0.2)
         {
@@ -196,6 +228,8 @@ public class BlobPath : MonoBehaviour
                 Jump();
             
             stuckTimer = 0f;
+
+            blobAnimtor.SetBool("Balloon", false);
         }
     }
 
