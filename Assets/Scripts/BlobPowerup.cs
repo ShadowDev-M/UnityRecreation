@@ -4,6 +4,7 @@ using System.Data;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using static UnityEngine.GraphicsBuffer;
 
 
 
@@ -40,6 +41,18 @@ public class BlobPowerup : MonoBehaviour
 
     private Animator blobAnimator;
 
+    [SerializeField]
+    private GameObject holeJellyBeanBody;
+    
+    private GameObject jellyBean1;
+
+    [SerializeField]
+    public GameObject ladderJellyBeanBody;
+
+    private GameObject jellyBean2;
+
+    private float lastTime;
+
     void Start()
     {
         blobAnimator = GetComponent<Animator>();
@@ -67,22 +80,30 @@ public class BlobPowerup : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) // Left mouse button
         {
+
+            Vector3 cameraPositon = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            cameraPositon.z = 1;
+
+            jellyBean1 = Instantiate(holeJellyBeanBody, cameraPositon, Quaternion.identity);
+
             UnsummonHole();
             UnsummonLadder();
 
-            GameObject newTarget = new GameObject("Jellybean");
-            newTarget.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            CallChase(newTarget, 0);
+            CallChase(jellyBean1, 0);
 
         }
         if (Input.GetMouseButtonDown(1)) // Left mouse button
         {
-            UnsummonLadder();
-            UnsummonHole();
+            Vector3 cameraPositon = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            cameraPositon.z = 1;
 
-            GameObject newTarget = new GameObject("Jellybean");
-            newTarget.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            CallChase(newTarget, 1);
+            jellyBean2 = Instantiate(ladderJellyBeanBody, cameraPositon, Quaternion.identity);
+
+            UnsummonHole();
+            UnsummonLadder();
+
+
+            CallChase(jellyBean2, 1);
 
         }
 
@@ -90,12 +111,13 @@ public class BlobPowerup : MonoBehaviour
         {
             if (Vector2.Distance(transform.position, holeJellybeanTarget.transform.position) < 0.25f)
             {
-               // print("success!");
-               
-                
+                // print("success!");
+
+                Destroy(jellyBean1);
+
                 SummonHole(holeJellybeanTarget.transform.position + Vector3.down);
             }
-           // if (blobPathScript.target == blobPathScript.Player.transform) { UnsummonHole(); UnsummonLadder(); holeJellybeanTarget = null; }
+            // if (blobPathScript.target == blobPathScript.Player.transform) { UnsummonHole(); UnsummonLadder(); holeJellybeanTarget = null; }
 
         }
 
@@ -104,17 +126,30 @@ public class BlobPowerup : MonoBehaviour
             if (Vector2.Distance(transform.position, ladderJellybeanTarget.transform.position) < 1.0f)
             {
                 print("success!");
-                
 
+                Destroy(jellyBean2);
 
                 SummonLadder(ladderJellybeanTarget.transform.position);
             }
-           //if (blobPathScript.target == blobPathScript.Player.transform) { UnsummonLadder(); UnsummonHole(); ladderJellybeanTarget = null; }
+            //if (blobPathScript.target == blobPathScript.Player.transform) { UnsummonLadder(); UnsummonHole(); ladderJellybeanTarget = null; }
 
         }
         if (blobPathScript.target == blobPathScript.Player.transform) { UnsummonLadder(); UnsummonHole(); ladderJellybeanTarget = null; holeJellybeanTarget = null; }
 
 
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (!Input.GetKey(KeyCode.E)) lastTime = Time.time;
+        else if (Time.time - lastTime >= 1)
+        {
+            blobPathScript.target = blobPathScript.Player.transform;
+
+            UnsummonHole();
+            UnsummonLadder();
+        }
     }
 
     void CallChase(GameObject target, int beanType)

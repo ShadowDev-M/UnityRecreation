@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         coll = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
+
+        
     }
 
     // Update is called once per frame
@@ -50,6 +53,12 @@ public class PlayerMovement : MonoBehaviour
         {
             // makes the players vertical velocity = jumpforce
             body.velocity = new Vector2(body.velocity.x, jumpForce);
+
+            anim.SetTrigger("Jumping");
+        }
+
+        if (Input.GetKeyDown(KeyCode.E)) {
+            anim.SetTrigger("CallBlob");
         }
         
         UpdateAnim();
@@ -77,6 +86,27 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isMoving", false);
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        anim.SetTrigger("PlayerDies");
+
+        //body.bodyType = RigidbodyType2D.Static;
+        anim.applyRootMotion = true;
+        Invoke("RestartLevel", 2.0f);
+    }
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void FixedUpdate()

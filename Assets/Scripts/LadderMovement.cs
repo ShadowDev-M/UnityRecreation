@@ -8,10 +8,17 @@ public class LadderMovement : MonoBehaviour
     private float vertical;
     private float speed = 2f;
     private bool isLadder;
-    private bool isClimbing;
+    public bool isClimbing;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Collider2D collider2D;
+
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -49,6 +56,8 @@ public class LadderMovement : MonoBehaviour
         {
             rb.gravityScale = 1f;
         }
+
+        animator.SetBool("isClimbing", isClimbing);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -72,4 +81,6 @@ public class LadderMovement : MonoBehaviour
             isClimbing = false;
         }
     }
+    
+    //public bool ReturnIsClimbing() { return isClimbing; }
 }
