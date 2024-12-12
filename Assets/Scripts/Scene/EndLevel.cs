@@ -6,25 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class EndLevel : MonoBehaviour
 {
-    private int loadNextScene;
-    // Start is called before the first frame update
-    void Start()
-    {
-        loadNextScene = SceneManager.GetActiveScene().buildIndex + 1;
-    }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(loadNextScene);
-
-            print("nextlevel :)");
-
-            if (loadNextScene == PlayerPrefs.GetInt("lvlAt"))
-            {
-                PlayerPrefs.SetInt("lvlAt", loadNextScene);
-            }
+            SceneManager.LoadScene(2);
         }
     }
+   
 }
