@@ -8,6 +8,10 @@ public class WaterInteraction : MonoBehaviour
     [SerializeField]
     private PlayerMovement player;
 
+    [Header("----------------- Water Interactions -----------------")]
+    [SerializeField] private AudioClip enemyFalls;
+    [SerializeField] private AudioClip playerFalls;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +28,14 @@ public class WaterInteraction : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+
+            SoundManager.Instance.Play(enemyFalls);
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Player"))
         {
+            SoundManager.Instance.Play(playerFalls);
             player.Die();
         }
     }

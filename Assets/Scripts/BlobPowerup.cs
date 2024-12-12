@@ -53,6 +53,11 @@ public class BlobPowerup : MonoBehaviour
 
     private float lastTime;
 
+    [Header("----------------- Blob Transforms -----------------")]
+    [SerializeField] private AudioClip eatJelly1;
+    [SerializeField] private AudioClip eatJelly2;
+    [SerializeField] private AudioClip blobTransforms;
+
     void Start()
     {
         blobAnimator = GetComponent<Animator>();
@@ -182,6 +187,9 @@ public class BlobPowerup : MonoBehaviour
 
         Vector3 cellWorldPos = tileMap.CellToWorld(cellPosition);
 
+        SoundManager.Instance.Play(eatJelly2);
+        SoundManager.Instance.Play(blobTransforms);
+
         Instantiate(ladderPrefab, cellWorldPos + new Vector3(0.0f,ladderPrefab.transform.localScale.y / 2, 0.0f), Quaternion.identity);
     }
 
@@ -220,8 +228,10 @@ public class BlobPowerup : MonoBehaviour
 
             GetComponent<Rigidbody2D>().simulated = false;
             //GetComponent<SpriteRenderer>().enabled = false;
-
+            SoundManager.Instance.Play(eatJelly1);
+            
             blobAnimator.SetBool("BlobHole", true);
+            SoundManager.Instance.Play(blobTransforms);
             transform.position = tileMap.CellToWorld(cellPosition) + new Vector3(0.5f, 0.9f, 0);
 
             blobTransformed = true;

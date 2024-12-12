@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask ground;
 
 
+    [Header("----------------- Blob Calls -----------------")]
     [SerializeField] private AudioClip callBlobClip1;
     [SerializeField] private AudioClip callBlobClip2;
     [SerializeField] private AudioClip callBlobClip3;
@@ -48,8 +49,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip comeHere1;
     [SerializeField] private AudioClip comeHere2;
 
-
-
+    [Header("----------------- Other Player Sounds -----------------")]
+    [SerializeField] private AudioClip walk;
+    [SerializeField] private AudioClip jump;
 
     // Start is called before the first frame update
     private void Start()
@@ -74,32 +76,43 @@ public class PlayerMovement : MonoBehaviour
         // sets the players velocity to +/- the movespeed
         body.velocity = new Vector2(dirX * moveSpeed, body.velocity.y);
 
+      
+
         // see above, detects a press of the Space Bar
         if (Input.GetButtonDown("Jump") == true && IsGrounded())
         {
             // makes the players vertical velocity = jumpforce
             body.velocity = new Vector2(body.velocity.x, jumpForce);
 
+
+            SoundManager.Instance.Play(jump);
             anim.SetTrigger("Jumping");
+
+
         }
 
         if (Input.GetKeyDown(KeyCode.E)) {
             SoundManager.Instance.RandomSoundEffect(new AudioClip[] { overHere1, overHere2, comeHere1, comeHere2, thisWay1, thisWay2});
 
             anim.SetTrigger("CallBlob");
-
+            
         }
-
+        
         if (!Input.GetKey(KeyCode.E)) lastTime = Time.time;
         else if (Time.time - lastTime >= 1)
         {
             lastTime = 10000000;
             SoundManager.Instance.RandomSoundEffect(new AudioClip[] { callBlobClip1, callBlobClip2, callBlobClip3, callBlobClip4, callBlobClip5, callBlobClip6, callBlobClip7, callBlobClip8, callBlobClip9, callBlobClip10, callBlobClip11, callBlobClip12 });
             anim.SetTrigger("CallBlob");
-
+        
         }
-
+        
         UpdateAnim();
+    }
+
+    public void playWalkSound()
+    {
+        SoundManager.Instance.Play(walk);
     }
 
     private bool IsGrounded()
@@ -140,12 +153,18 @@ public class PlayerMovement : MonoBehaviour
 
         //body.bodyType = RigidbodyType2D.Static;
         anim.applyRootMotion = true;
-        Invoke("RestartLevel", 2.0f);
+        Invoke("GoToLooseScreen", 2.0f);
+        //Invoke("RestartLevel", 2.0f);
     }
-    private void RestartLevel()
+
+    private void GoToLooseScreen()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(4);
     }
+    //private void RestartLevel()
+    //{
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    //}
 
     private void FixedUpdate()
     {
