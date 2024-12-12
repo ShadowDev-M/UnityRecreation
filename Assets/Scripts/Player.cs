@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private Collider2D coll;
     private SpriteRenderer sprite;
-
+    private float lastTime;
     // variable to store the movement
     // direction of the player
     private float dirX = 0.0f;
@@ -24,6 +24,32 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 12.0f;
 
     [SerializeField] private LayerMask ground;
+
+
+    [SerializeField] private AudioClip callBlobClip1;
+    [SerializeField] private AudioClip callBlobClip2;
+    [SerializeField] private AudioClip callBlobClip3;
+    [SerializeField] private AudioClip callBlobClip4;
+    [SerializeField] private AudioClip callBlobClip5;
+    [SerializeField] private AudioClip callBlobClip6;
+    [SerializeField] private AudioClip callBlobClip7;
+    [SerializeField] private AudioClip callBlobClip8;
+    [SerializeField] private AudioClip callBlobClip9;
+    [SerializeField] private AudioClip callBlobClip10;
+    [SerializeField] private AudioClip callBlobClip11;
+    [SerializeField] private AudioClip callBlobClip12;
+
+    [SerializeField] private AudioClip overHere1;
+    [SerializeField] private AudioClip overHere2;
+
+    [SerializeField] private AudioClip thisWay1;
+    [SerializeField] private AudioClip thisWay2;
+
+    [SerializeField] private AudioClip comeHere1;
+    [SerializeField] private AudioClip comeHere2;
+
+
+
 
     // Start is called before the first frame update
     private void Start()
@@ -58,9 +84,21 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.E)) {
+            SoundManager.Instance.RandomSoundEffect(new AudioClip[] { overHere1, overHere2, comeHere1, comeHere2, thisWay1, thisWay2});
+
             anim.SetTrigger("CallBlob");
+
         }
-        
+
+        if (!Input.GetKey(KeyCode.E)) lastTime = Time.time;
+        else if (Time.time - lastTime >= 1)
+        {
+            lastTime = 10000000;
+            SoundManager.Instance.RandomSoundEffect(new AudioClip[] { callBlobClip1, callBlobClip2, callBlobClip3, callBlobClip4, callBlobClip5, callBlobClip6, callBlobClip7, callBlobClip8, callBlobClip9, callBlobClip10, callBlobClip11, callBlobClip12 });
+            anim.SetTrigger("CallBlob");
+
+        }
+
         UpdateAnim();
     }
 

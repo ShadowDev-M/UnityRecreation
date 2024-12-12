@@ -17,7 +17,10 @@ public class BlobPath : MonoBehaviour
     public float stuckThreshold = 0.1f; // Threshold to detect if the AI isn't moving
     public float speedBoost = 0.0f;
     public GameObject Player;
-    
+    [SerializeField] private AudioClip balloonInflate;
+    [SerializeField] private AudioClip balloonDeflate;
+
+
     public float speed = 3f; // Movement speed
     private Path path;
     private int currentWaypoint = 0;
@@ -28,6 +31,7 @@ public class BlobPath : MonoBehaviour
     private Vector2 lastPosition;
     private float stuckTimer = 0f;
     private Collider2D blobCollider;
+
 
     private float lastTime;
     private Animator blobAnimtor;
@@ -63,7 +67,6 @@ public class BlobPath : MonoBehaviour
 
     void FixedUpdate()
     {
-        
 
         if (speedBoost > 0) { speedBoost -= Time.fixedDeltaTime*2; } else { speedBoost = 0; }
 
@@ -88,13 +91,15 @@ public class BlobPath : MonoBehaviour
         if (!Input.GetKey(KeyCode.E)) lastTime = Time.time;
         else if (Time.time - lastTime >= 1)
         {
+
             target = Player.transform;
 
             DetectStuck();
+
         }
 
 
-            if (isFlying)
+        if (isFlying)
         {
             BalloonMode();
             return;
@@ -207,24 +212,33 @@ public class BlobPath : MonoBehaviour
 
         if (stuckTimer >= stuckDetectionTime)
         {
+           // if (isFlying == false) SoundManager.Instance.Play(balloonInflate);
+
             isFlying = true; // Switch to flying mode if stuck
+            lastTime = 10000000;
+
+
         }
     }
 
     void BalloonMode()
     {
+
         Vector2 direction = ((Vector2)target.position - rb.position).normalized;
         rb.velocity = direction * speed*2;
         blobCollider.enabled = false;
 
         blobAnimtor.SetBool("Balloon", true);
 
+
         // will stop flying when near target
         if (Vector2.Distance(rb.position, target.position) < 0.2)
         {
             blobCollider.enabled = true;
             rb.velocity = Vector2.zero;
+            SoundManager.Instance.Play(balloonDeflate);
             isFlying = false;
+
             
                 Jump();
             
