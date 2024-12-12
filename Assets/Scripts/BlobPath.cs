@@ -169,13 +169,14 @@ public class BlobPath : MonoBehaviour
     }
 
     void Hop() {
-        if (isGrounded && !blobAnimtor.GetCurrentAnimatorStateInfo(0).IsName("BlobHop 1") && !blobAnimtor.GetCurrentAnimatorStateInfo(0).IsName("BlobHop"))
+        if (isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, Random.Range(3.3f, 4.1f));
+            rb.velocity = new Vector2(rb.velocity.x, Random.Range(1.3f, 2.1f));
+            if (Vector2.Distance(transform.position, Player.transform.position) < 1.2) rb.velocity = new Vector2(rb.velocity.x, Random.Range(1.3f, 6.1f));
 
 
-            
-            blobAnimtor.SetBool("blobHop", !isGrounded);
+
+            // blobAnimtor.SetBool("blobHop", !isGrounded);
         }
     }
 

@@ -150,6 +150,13 @@ public class BlobPowerup : MonoBehaviour
             UnsummonHole();
             UnsummonLadder();
         }
+        if (Input.GetKey(KeyCode.E)) 
+        {
+            blobPathScript.target = blobPathScript.Player.transform;
+
+            UnsummonHole();
+            UnsummonLadder();
+        }
     }
 
     void CallChase(GameObject target, int beanType)
