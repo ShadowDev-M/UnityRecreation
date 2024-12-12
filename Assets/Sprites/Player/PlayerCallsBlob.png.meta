@@ -372,7 +372,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerCallsBlob_0: 6826146718962992128
+      PlayerCallsBlob_1: -4004467868556062098
+      PlayerCallsBlob_2: 5535589800910981655
+      PlayerCallsBlob_3: 3505236733068014160
+      PlayerCallsBlob_4: -2402826661895755327
+      PlayerCallsBlob_5: 5363617888410297795
+      PlayerCallsBlob_6: 7456278247276159075
+      PlayerCallsBlob_7: -5783212031913845541
+      PlayerCallsBlob_8: 457938749130242250
+      PlayerCallsBlob_9: -2711166005285262478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

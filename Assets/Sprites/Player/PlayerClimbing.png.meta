@@ -372,7 +372,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerClimbing_0: 6507331650431948092
+      PlayerClimbing_1: -4544157703508414616
+      PlayerClimbing_2: 4429985338827901031
+      PlayerClimbing_3: -6319927492127890509
+      PlayerClimbing_4: -328439046868763652
+      PlayerClimbing_5: -2899218126193689135
+      PlayerClimbing_6: -5899878552270767712
+      PlayerClimbing_7: -6537324076306427973
+      PlayerClimbing_8: -5042533776656080643
+      PlayerClimbing_9: -1544342443813889028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

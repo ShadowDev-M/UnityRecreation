@@ -588,7 +588,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PlayerDies_0: -1140692512454554721
+      PlayerDies_1: 5053385180836585535
+      PlayerDies_10: 5387627424774202314
+      PlayerDies_11: 6256220028342568054
+      PlayerDies_12: 4767396326948317436
+      PlayerDies_13: -6793496544021639549
+      PlayerDies_14: 1999605058905035962
+      PlayerDies_15: 4693256138081184292
+      PlayerDies_16: 5750670789366273546
+      PlayerDies_17: -3977779888695036477
+      PlayerDies_18: -4533473255517372252
+      PlayerDies_2: 8250132817925786719
+      PlayerDies_3: -8599931104707631461
+      PlayerDies_4: 6652907476218020152
+      PlayerDies_5: -8344189136990884959
+      PlayerDies_6: -5087501646080558230
+      PlayerDies_7: 6113584089216558385
+      PlayerDies_8: -275876337236132654
+      PlayerDies_9: -4712578055981531131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
